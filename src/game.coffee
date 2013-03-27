@@ -1,7 +1,5 @@
 #<< tictactoe/ai
 #<< tictactoe/board
-#<< tictactoe/player
-#<< tictactoe/ai
 #<< tictactoe/event
 #<< tictactoe/mark
 #<< tictactoe/player
