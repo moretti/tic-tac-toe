@@ -15,6 +15,7 @@ namespace 'tictactoe', (exports) ->
             #tictactoe.helpers.randomChoice board.getPossibleMoves()
 
         # http://en.wikipedia.org/wiki/Negamax
+        # http://www.cs.colostate.edu/~anderson/cs440/index.html/lib/exe/fetch.php?media=notes:negamax.pdf
         @_negamax: (board, depth, alpha, beta, playerMark) ->
             if board.isGameOver() or depth == 0
                 return [@_getScore(playerMark, board), null]
