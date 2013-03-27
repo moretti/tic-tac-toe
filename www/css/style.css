@@ -1,0 +1,51 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+#board {
+    display: block;
+    position: absolute;
+    top: 3%;
+    left: 3%;
+    width: 93%;
+    height: 93%;
+}
+
+#status {
+    display: block;
+    position: absolute;;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+    font-size: 4.5vmin;
+    color: #004000;
+    font-family: 'Wendy One', sans-serif;
+}
+
+line, circle {  
+    stroke-width: 3;
+    fill: #FFF;
+}
+
+#board-def line {
+    stroke: #B8B8B8;
+}
+
+#O circle {
+    stroke: #F0F;
+}
+
+#X line {
+    stroke: #00F;
+}
+
+#strike line, #strike-diag line {
+    stroke: #F00;
+}
+
+use[id^="O"], use[id^="X"], use[id^="strike"] {
+    display: none;
+}
