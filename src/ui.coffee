@@ -14,7 +14,7 @@ namespace 'tictactoe', (exports) ->
         _onBoardClick: (e) =>
             x = e.pageX - @_boardSquare.offset().left;
             y = e.pageY - @_boardSquare.offset().top;
-
+            
             if x > 0 and y > 0 and not @_game.isAIMoving
                 index = @_getIndex x, y
                 @_game.move(index)
@@ -24,7 +24,7 @@ namespace 'tictactoe', (exports) ->
             height = @_boardContext.height()
 
             boardColumns = 3
-            squareLength = Math.min width, height / boardColumns
+            squareLength = Math.min(width, height) / boardColumns
 
             iX = Math.floor x / squareLength
             iY = Math.floor y / squareLength

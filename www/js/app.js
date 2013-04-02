@@ -372,7 +372,7 @@
         width = this._boardContext.width();
         height = this._boardContext.height();
         boardColumns = 3;
-        squareLength = Math.min(width, height / boardColumns);
+        squareLength = Math.min(width, height) / boardColumns;
         iX = Math.floor(x / squareLength);
         iY = Math.floor(y / squareLength);
         return i = iX + iY * boardColumns;
